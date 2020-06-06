@@ -31,7 +31,7 @@ public class IfElseIf01 {
 		} else {
 			System.out.println("Neutral");
 		}
-		
+
 		scan.close();
 	}
 }
