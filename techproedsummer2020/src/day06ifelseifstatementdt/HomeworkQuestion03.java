@@ -2,7 +2,7 @@ package day06ifelseifstatementdt;
 
 import java.util.Scanner;
 
-public class HomeworkQ1 {
+public class HomeworkQuestion03 {
 	public static void main(String[] args) {
 		// 1. Ask user to enter a character, then check whether the character is
 		// alphabet or not

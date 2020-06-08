@@ -2,7 +2,7 @@ package day06ifelseifstatementdt;
 
 import java.util.Scanner;
 
-public class HomeworkQ2 {
+public class HomeworkQuestion04 {
 
 	public static void main(String[] args) {
 		// Ask user to enter any name of the week, then get second ,fourth, and sixth
