@@ -14,9 +14,7 @@ public class HomeworkQ2 {
 
 		String chars = scan.nextLine();
 
-		char char2 = chars.charAt(1);
-		char char4 = chars.charAt(3);
-		char char6 = chars.charAt(5);
+		char char2 = chars.charAt(1), char4 = chars.charAt(3), char6 = chars.charAt(5);
 
 		System.out.println("the chars of day: " + char2 + char4 + char6);
 
