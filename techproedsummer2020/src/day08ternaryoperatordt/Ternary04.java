@@ -16,8 +16,7 @@ public class Ternary04 {
 		String str = scan.nextLine().toUpperCase();
 		System.out.println(str);
 
-		String checkStr = str.length() == 2 
-				? "It is valid for state abbreviations"
+		String checkStr = str.length() == 2 ? "It is valid for state abbreviations"
 				: "It is not valid for state abbreviations";
 
 		System.out.println(checkStr);
