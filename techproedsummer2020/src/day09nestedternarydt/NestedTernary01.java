@@ -24,10 +24,9 @@ public class NestedTernary01 {
 		String res2 = (year%100==0) ? (year%400==0 ? "Leap" : "Not leap") : 
             (year%4==0 ? "Leap" : "Not leap");
 		//
-		System.out.println(res);
+		System.out.println(res +" "+ res2);
 
 		scan.close();
-
 
 	}
 
