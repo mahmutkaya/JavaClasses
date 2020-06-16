@@ -16,7 +16,15 @@ public class HomeworkQuestion05 {
 		String word = scan.nextLine();
 
 		String reverseWord = new StringBuilder(word).reverse().toString();
-		System.out.println(word + " is reversed: " + reverseWord);
+		System.out.println(word + " is reversed by using StringBuilder " + reverseWord);
+		
+		//2nd way by for-loop
+		String reverse = "";
+		for (int i = word.length()-1; i>=0 ; i--) {
+			reverse += word.charAt(i);
+		};
+		
+		System.out.println(word + " is reversed by using for-loop: "+reverse);
 
 		scan.close();
 	}

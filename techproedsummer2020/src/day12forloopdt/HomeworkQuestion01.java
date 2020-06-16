@@ -1,7 +1,5 @@
 package day12forloopdt;
 
-import java.util.Scanner;
-
 public class HomeworkQuestion01 {
 
 	public static void main(String[] args) {
