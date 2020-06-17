@@ -20,6 +20,15 @@ public class HomeworkQuestion06 {
 		}
 		System.out.println(sum);
 
+		// 2nd way:
+		int num2 = scan.nextInt(), sum2 = 0;
+		while (num2 != 0) {
+			int lastDigit = num2 % 10; // to get the last digit of a number: number%10
+			num2 /= 10; // to remove the last digit of a number: number/10
+			sum2 += lastDigit;
+		}
+		System.out.println("the sum of digits is " + sum2);
+
 		scan.close();
 
 	}
