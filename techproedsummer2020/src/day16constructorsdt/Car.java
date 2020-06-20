@@ -45,6 +45,8 @@ public class Car {
 		// then print all features on the console
 		Car c3 = new Car("Infinity", 2018, 24000, "Q50");
 		System.out.println(c3.make + " " + c3.type + " " + c3.year + " " + c3.price);
+		
+		
 	}
 
 }

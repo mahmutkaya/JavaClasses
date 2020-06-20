@@ -20,6 +20,8 @@ public class Animals {
 
 		System.out.println(a1.height + " " + a1.name + " " + a1.mammal);
 		System.out.println(a2.height + " " + a2.name + " " + a2.mammal);
+		
+		
 	}
 
 }
