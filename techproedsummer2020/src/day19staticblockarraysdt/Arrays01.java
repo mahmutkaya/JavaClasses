@@ -52,6 +52,15 @@ public class Arrays01 {
 			System.out.print(brr[i] + " ");
 		}
 
+		String sAr[] = new String[2];
+		sAr[0] = "aaa";
+
+		System.out.println(Arrays.toString(sAr));
+
+		char cAr[] = new char[2];
+		cAr[1] = '1';
+		System.out.println(Arrays.toString(cAr));
+
 	}
 
 }
