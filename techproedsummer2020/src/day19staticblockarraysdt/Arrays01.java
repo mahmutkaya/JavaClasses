@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Arrays01 {
 
 	public static void main(String[] args) {
-
 		// How to create an Array
 		int arr[] = new int[4];
 

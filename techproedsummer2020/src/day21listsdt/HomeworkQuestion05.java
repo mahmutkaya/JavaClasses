@@ -17,7 +17,7 @@ public class HomeworkQuestion05 {
 		String str = scan.nextLine();
 		
 		System.out.println(str.split(" ").length);
-
+		
 	}
 
 }

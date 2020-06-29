@@ -15,5 +15,4 @@ public class HomeworkQuestion01 {
 		}
 		System.out.println(sum);
 	}
-
 }
