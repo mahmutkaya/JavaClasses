@@ -31,12 +31,12 @@ public class HomeworkQuestion06 {
 
 	public static <T> T[] removeEl(T[] arr, T e) {
 		T[] newArr = (T[]) new Object[arr.length - 1];
-
-		for (int i = 0, j = 0; i < arr.length; i++) {
-			if (arr[i] == e) {
+		int j =0;
+		for (T i : arr) {
+			if (i == e) {
 				continue;
 			}
-			newArr[j] = arr[i];
+			newArr[j] = i;
 			j++;
 		}
 		return newArr;
