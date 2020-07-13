@@ -1,6 +1,10 @@
 package day31exceptionsdt;
 
-public class E02 {
+import java.util.ArrayList;
+import java.util.List;
+
+public class E02{
+	
 	/*
 	 * 1) if when you type code, you do not get any red underline, but after running
 	 * you get red messages on the console, it means you are getting
@@ -17,9 +21,25 @@ public class E02 {
 	 * handle, it is optional.
 	 */
 
+
 	public static void main(String[] args) throws ArithmeticException{
-		int x = 12, y = 0;
+		int x = 12, y = 1;
+		x= x++;
 		System.out.println(x / y);
+		
+		String v = null;
+		boolean b = false;
+		if(b=true) System.out.println("jjjj");
+		else System.out.println("kkkkk");
+		System.out.println(v);
+		
+//		for (int i = 0; i < 10;) {
+		int i = 0;
+			
+			System.out.print(i++);
+			
+//		}
+		
 
 	}
 
