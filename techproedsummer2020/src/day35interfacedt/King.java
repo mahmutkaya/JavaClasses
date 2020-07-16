@@ -1,7 +1,6 @@
 package day35interfacedt;
 
 public class King extends Hotel{
-	
 	public void tea() {
 		System.out.println("tea service for kings..");
 	}

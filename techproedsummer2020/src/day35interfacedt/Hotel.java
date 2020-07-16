@@ -1,6 +1,8 @@
 package day35interfacedt;
 
 public abstract class Hotel {
+	
+	public  int   i =0;
 
 	/*
 	 * 1)In a hotel, breakfast and daily room cleaning are mandatory for all type of
