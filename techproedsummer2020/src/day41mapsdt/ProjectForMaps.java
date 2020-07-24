@@ -35,9 +35,10 @@ public class ProjectForMaps {
 			
 			for(String m : words) {
 				
-				if(m.endsWith(",") || m.endsWith(".")) {
-					m = m.substring(0, m.length()-1);
-				}
+//				if(m.endsWith(",") || m.endsWith(".")) {
+//					m = m.substring(0, m.length()-1);
+//				}
+				m=m.replaceAll("[.|,]", "").toLowerCase();
 				if(!wordCounter.containsKey(m)) {
 					wordCounter.put(m, 1);
 				}else {
