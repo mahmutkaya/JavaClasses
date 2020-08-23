@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import sun.jvm.hotspot.utilities.Assert;
 
 public class LocatorsIntro {
     /**
@@ -35,27 +36,31 @@ public class LocatorsIntro {
         passwordTextBox.sendKeys("Test1234!");
         // click sign in button
         signInBtn.click();
-        // Then verify that the expected user id testtechproed@gmail.com
+        // Then verify that the expected user id is testtechproed@gmail.com
         String actualUserId = driver.findElement(By.className("navbar-text")).getText(),
                 expectedUserId = "testtechproed@gmail.com";
         if (actualUserId.equals(expectedUserId)) {
-            System.out.println("passed");
+            System.out.println("user id is testtechproed@gmail.com");
         } else {
-            System.out.println("failed");
+            System.out.println("user id is not testtechproed@gmail.com");
             System.out.println("actual user id: " + actualUserId + "\nexpected user id: " + expectedUserId);
         }
         //Verify the Addresses and Sign Out texts are displayed
-        String addresses = driver.findElement(By.linkText("Addresses")).getText(),
-                signOut = driver.findElement(By.linkText("Sign out")).getText();
-        if (addresses.equals("Addresses") && signOut.equals("Sign out")) {
-            System.out.println("passed");
+        String addresses = driver.findElement(By.linkText("Addresses")).getText();
+        WebElement signOut = driver.findElement(By.linkText("Sign out"));
+
+        if (addresses.equals("Addresses") && signOut.getText().equals("Sign out")) {
+            System.out.println("Addresses and Sign Out texts are displayed");
         } else {
-            System.out.println("failed");
-            System.out.println("addresses: "+addresses + "\nsign_out: "+ signOut);
+            System.out.println("Addresses and Sign Out texts are not displayed");
+            System.out.println("addresses: "+addresses + "\nsign_out: "+ signOut.getText());
         }
         // Find the number of total link on the page
         int allLinks = driver.findElements(By.tagName("a")).size();
         System.out.println(allLinks);
+
+        // Sign out from the page
+        signOut.click();
 
         driver.close();
     }
