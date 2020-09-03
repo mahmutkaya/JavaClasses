@@ -1,6 +1,8 @@
 package techproedenglish01.techproedenglish01api;
 
 import org.junit.Test;
+import static org.hamcrest.Matchers.*;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 
@@ -18,11 +20,21 @@ public class GetRequest07 extends TestBaseDt{
 	
 	@Test
 	public void get01() {
+		spec01.pathParam("id", 123);
 		Response res = given()
 						.spec(spec01)
 					   .when()
-					   	.get("/123");
+					   	.get("/{id}");
 		res.prettyPrint();
+		
+		res.then().assertThat()
+			.statusCode(200)
+			.header("Server", "cloudflare")
+			.contentType(ContentType.JSON)
+			.body("userId", equalTo(7),
+					"title", equalTo("esse et quis iste est earum aut impedit"),
+					"completed", equalTo(false)
+					);
 	}
 
 }
