@@ -8,6 +8,9 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class GetRequest11 extends TestBaseDt {
 	
@@ -64,7 +67,13 @@ public class GetRequest11 extends TestBaseDt {
 		
 		softAssert.assertEquals(json.getString("data[4].employee_name"), "Airi Satou");
 		softAssert.assertEquals(json.getString("data[5].employee_salary"), "372000");
-		
+		softAssert.assertEquals(json.getList("data.id").size(), 24);
+		softAssert.assertTrue(json.getList("data.employee_name").contains("Rhona Davidson"));
+		List<String> ageList = new ArrayList<>();
+		ageList.add("21");
+		ageList.add("23");
+		ageList.add("61");
+		softAssert.assertTrue(json.getList("data.employee_age").containsAll(ageList));
 		
 		softAssert.assertAll();
 		
