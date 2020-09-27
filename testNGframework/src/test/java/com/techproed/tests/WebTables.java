@@ -105,6 +105,29 @@ public class WebTables extends TestBase {
         }
     }
 
+    // printData(3,6); => print the data in row 3 column 6
+    //Create a test method: printData(int row, int column);
+    // This method should print the given cell. Example: printData(2,3);
+    // should print 2nd row,3rd column
+    //This custom method will take a row, and a column number
+    //and print the data on that row and column
+    //This will not be a test method, but this will be a custom method
+    public void printData(int row,int column){
+//        String xPath="//tbody//tr[9]//td[5]";//NJ
+//        String xPath2="//tbody//tr[2]//td[3]";//12746376
+        //Only the index numbers keep changing in teh webtable xpath
+        String xPath="//tbody//tr["+row+"]//td["+column+"]";
+        WebElement data=driver.findElement(By.xpath(xPath));
+        System.out.println(data.getText());
+    }
+    @Test
+    public void printDataTest(){
+        login();
+        printData(2,3);
+        printData(5,4);
+    }
+
+
 
     //HOMEWORK:
     /*
@@ -113,5 +136,24 @@ public class WebTables extends TestBase {
     test if the first table row has Orlando
     test if there 4th column has Hotel name called Hilton
      */
+    @Test
+    public void webTableHW() {
+        List<WebElement> column6 = driver.findElements(By.xpath("//td[6]"));
+        for (WebElement column : column6) {
+            if (column.getText().contains("1000"))
+                System.out.println(column.getText());
+        }
+        List<WebElement> row1 = driver.findElements(By.xpath("//tbody//tr[1]"));
+        for (WebElement w : row1) {
+            if (w.getText().contains("Orlando"))
+                System.out.println(w.getText());
+        }
+        List<WebElement> column4 = driver.findElements(By.xpath("//td[4]"));
+        for (WebElement column : column4) {
+            if (column.getText().contains("Hilton")) {
+                System.out.println(column.getText());
+            }
+        }
+    }
 
 }
