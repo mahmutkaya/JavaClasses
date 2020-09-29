@@ -60,8 +60,12 @@ public class Practice01 extends TestBaseDt{
 		Assert.assertTrue(res.asString().contains(expectedData.get("trueText")));
 		Assert.assertFalse(res.asString().contains(expectedData.get("falseText")));
 		
-		// 4. make assertions - soft
+		// 5. make assertions - soft
 		SoftAssert soft = new SoftAssert();
+		
+		soft.assertEquals(res.getHeader("Server"), expectedData.get("Server"));
+		soft.assertEquals(res.getHeader("Content-Type"), expectedData.get("Content-Type"));
+		soft.assertEquals(res.getHeader("Via"), expectedData.get("Via"));
 		
 		soft.assertTrue(res.asString().contains(expectedData.get("trueText")));
 		soft.assertFalse(res.asString().contains(expectedData.get("falseText")));
