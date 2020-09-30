@@ -5,59 +5,66 @@ import java.util.Map;
 
 public class Data {
 
-private Integer id;
-private String employeeName;
-private Integer employeeSalary;
-private Integer employeeAge;
-private String profileImage;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	public Data(Integer id, String employeeName, Integer employeeSalary, Integer employeeAge, String profileImage) {
+		this.id = id;
+		this.employeeName = employeeName;
+		this.employeeSalary = employeeSalary;
+		this.employeeAge = employeeAge;
+		this.profileImage = profileImage;
+	}
 
-public Integer getId() {
-return id;
-}
+	public Data() { }
 
-public void setId(Integer id) {
-this.id = id;
-}
+	private Integer id;
+	private String employeeName;
+	private Integer employeeSalary;
+	private Integer employeeAge;
+	private String profileImage;
 
-public String getEmployeeName() {
-return employeeName;
-}
+	public Integer getId() {
+		return id;
+	}
 
-public void setEmployeeName(String employeeName) {
-this.employeeName = employeeName;
-}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-public Integer getEmployeeSalary() {
-return employeeSalary;
-}
+	public String getEmployeeName() {
+		return employeeName;
+	}
 
-public void setEmployeeSalary(Integer employeeSalary) {
-this.employeeSalary = employeeSalary;
-}
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
 
-public Integer getEmployeeAge() {
-return employeeAge;
-}
+	public Integer getEmployeeSalary() {
+		return employeeSalary;
+	}
 
-public void setEmployeeAge(Integer employeeAge) {
-this.employeeAge = employeeAge;
-}
+	public void setEmployeeSalary(Integer employeeSalary) {
+		this.employeeSalary = employeeSalary;
+	}
 
-public String getProfileImage() {
-return profileImage;
-}
+	public Integer getEmployeeAge() {
+		return employeeAge;
+	}
 
-public void setProfileImage(String profileImage) {
-this.profileImage = profileImage;
-}
+	public void setEmployeeAge(Integer employeeAge) {
+		this.employeeAge = employeeAge;
+	}
 
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
+	public String getProfileImage() {
+		return profileImage;
+	}
 
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
-}
+	public void setProfileImage(String profileImage) {
+		this.profileImage = profileImage;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [id=" + id + ", employeeName=" + employeeName + ", employeeSalary=" + employeeSalary
+				+ ", employeeAge=" + employeeAge + ", profileImage=" + profileImage + ", additionalProperties=" + "]";
+	}
 
 }

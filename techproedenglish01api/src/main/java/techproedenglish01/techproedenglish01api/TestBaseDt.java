@@ -6,7 +6,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 
 public class TestBaseDt {
-	protected RequestSpecification spec01,spec02,spec03,spec04;
+	protected RequestSpecification spec01,spec02,spec03,spec04,spec05;
 	
 	@Before
 	public void setUp01() {
@@ -35,6 +35,13 @@ public class TestBaseDt {
 				             setBaseUri("http://dummy.restapiexample.com/api/v1").
 				             build();
 	}
+	@Before
+	public void setUp05() {
+		spec05 = new RequestSpecBuilder().
+				             setBaseUri("http://api.openweathermap.org").
+				             build();
+	}
+	
 	
 
 }

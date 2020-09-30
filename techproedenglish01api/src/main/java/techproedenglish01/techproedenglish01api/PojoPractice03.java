@@ -1,16 +1,13 @@
-package apipracticedt;
+package techproedenglish01.techproedenglish01api;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import techproedenglish01.techproedenglish01api.Data;
 
 public class PojoPractice03 {
 
 private String status;
 private Data data;
 private String message;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
 public String getStatus() {
 return status;
@@ -36,12 +33,18 @@ public void setMessage(String message) {
 this.message = message;
 }
 
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
+public PojoPractice03(String status, Data data, String message) {
+	this.status = status;
+	this.data = data;
+	this.message = message;
 }
 
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
+public PojoPractice03() {
+}
+
+@Override
+public String toString() {
+	return "PojoPractice03 [status=" + status + ", data=" + data + ", message=" + message + ", additionalProperties=" + "]";
 }
 
 }
