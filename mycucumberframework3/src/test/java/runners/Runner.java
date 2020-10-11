@@ -6,15 +6,16 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //where is the path of the feature folder
-        features = "src/test/resources/features",
-        //path of the step definitions folder
+        //Path of the features folder
+        features ="src/test/resources/features",
+//        Path of the step definitions folder
         glue = "stepdefinitions",
+        tags = "@scenario_outline",
+//        tags ="@test1 and not @test2",
         dryRun = false,
-        tags = "@datatable",
         publish = true
+
 )
 public class Runner {
-    //Runner class is to run the feature files
-    //runner class is also used to configure and control the framework
+
 }

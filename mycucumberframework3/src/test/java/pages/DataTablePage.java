@@ -9,17 +9,18 @@ import utilities.Driver;
 import java.util.List;
 
 public class DataTablePage {
-    public DataTablePage(){
-        PageFactory.initElements(Driver.getDriver(), this);
+
+    public  DataTablePage(){
+        PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(xpath = "//div[@class='dt-buttons']//span")
-    public WebElement newBtn;
+    public WebElement newButton;
 
-    @FindBy(id = "DTE_Field_first_name")
+    @FindBy(xpath = "//input[@id='DTE_Field_first_name']")
     public WebElement firstName;
 
-    @FindBy(id = "DTE_Field_last_name")
+    @FindBy(xpath = "//input[@id='DTE_Field_last_name']")
     public WebElement lastName;
 
     @FindBy(id = "DTE_Field_position")
@@ -37,16 +38,12 @@ public class DataTablePage {
     @FindBy(id = "DTE_Field_salary")
     public WebElement salary;
 
-    @FindBy(linkText = "Create")
-    public WebElement createBtn;
+    @FindBy(xpath = "//button[@class='btn']")
+    public WebElement createButton;
 
     @FindBy(xpath = "//input[@type='search']")
     public WebElement searchBox;
 
-    @FindBy(xpath = "//div[@class='dt-buttons']//span")
-    public WebElement firstData;
-
-    @FindBy(xpath="//td[class='sorting_1']")
+    @FindBy(xpath = "//td[@class='sorting_1']")
     public WebElement nameField;
-
 }
