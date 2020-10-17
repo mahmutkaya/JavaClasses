@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="24.417">
+    <testcase classname="US1000 Google search test" name="TC01 Verify iphone search" time="7.823">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the google page............................................passed
+And user search for "school bag"............................................passed
+Then verify the result has "school bag".....................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(GoogleSearchStepDefinitions.java:29)
+	at ✽.verify the result has "school bag"(file:///Users/mahmutkaya/JavaClasses/mycucumberframework3/src/test/resources/features/US1000%20Google%20search%20test.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="US1000 Google search test" name="TC02 Verify tea pot search" time="4.898">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the google page............................................passed
+And user search for "tea pot"...............................................passed
+Then verify the result has "tea pot"........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(GoogleSearchStepDefinitions.java:29)
+	at ✽.verify the result has "tea pot"(file:///Users/mahmutkaya/JavaClasses/mycucumberframework3/src/test/resources/features/US1000%20Google%20search%20test.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="US1000 Google search test" name="TC03 Verify flower search" time="6.747">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the google page............................................passed
+And user search for "flower"................................................passed
+Then verify the result has "flower".........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(GoogleSearchStepDefinitions.java:29)
+	at ✽.verify the result has "flower"(file:///Users/mahmutkaya/JavaClasses/mycucumberframework3/src/test/resources/features/US1000%20Google%20search%20test.feature:13)
+]]></failure>
+    </testcase>
+    <testcase classname="US1000 Google search test" name="TC04 Verify bmw search" time="4.828">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the google page............................................passed
+And user search for "bmw"...................................................passed
+Then verify the result has "bmw"............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(GoogleSearchStepDefinitions.java:29)
+	at ✽.verify the result has "bmw"(file:///Users/mahmutkaya/JavaClasses/mycucumberframework3/src/test/resources/features/US1000%20Google%20search%20test.feature:16)
+]]></failure>
+    </testcase>
+</testsuite>
