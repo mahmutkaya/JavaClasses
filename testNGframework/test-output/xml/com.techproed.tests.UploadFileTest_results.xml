@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="koala test 1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.366">
+    <properties></properties>
+
+
+
+            <testcase
+                name="uploadFileMethod"
+                time="11.366"
+                classname="com.techproed.tests.UploadFileTest">
+            </testcase>
+</testsuite>

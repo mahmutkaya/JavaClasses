@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="koala test 1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.147">
+    <properties></properties>
+
+
+
+            <testcase
+                name="contextClickMethod"
+                time="3.147"
+                classname="com.techproed.tests.ActionsClass1">
+            </testcase>
+</testsuite>

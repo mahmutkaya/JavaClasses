@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Test1">
+        <classes>
+            <class name="com.techproed.tests.WebTables">
+                <methods>
+                    <include name="printRows"/>
+                    <include name="printCells"/>
+                </methods>
+            </class>
+            <class name="com.techproed.tests.Dropdown">
+                <methods>
+                    <include name="selectByValue"/>
+                </methods>
+            </class>
+            <class name="com.techproed.tests.AlertTest">
+                <methods>
+                    <exclude name="acceptAlert"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="koala test 1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.003">
+    <properties></properties>
+
+
+
+            <testcase
+                name="isExist"
+                time="0.003"
+                classname="com.techproed.tests.IsExistClass">
+            </testcase>
+</testsuite>

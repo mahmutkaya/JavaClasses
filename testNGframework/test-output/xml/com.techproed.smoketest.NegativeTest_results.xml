@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.041">
+    <properties></properties>
+
+
+
+            <testcase
+                name="invalidPassword"
+                time="2.690"
+                classname="com.techproed.smoketest.NegativeTest">
+            </testcase>
+            <testcase
+                name="invalidIDAndPassword"
+                time="2.759"
+                classname="com.techproed.smoketest.NegativeTest">
+            </testcase>
+            <testcase
+                name="invalidID"
+                time="6.592"
+                classname="com.techproed.smoketest.NegativeTest">
+            </testcase>
+</testsuite>

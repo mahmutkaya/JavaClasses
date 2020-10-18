@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite 1" verbose="1" >
+    <!--    running certain test groups-->
+    <test name="Regression Group 1">
+        <groups>
+            <run>
+                <!--                include: please run only @Test(groups="regression1")-->
+                <!--                exclude: run all but regression1-->
+                <include name="regression1"></include>
+            </run>
+        </groups>
+        <!--        go find test cases with regression1 tag in NegativeTest class-->
+        <classes>
+            <class name="com.techproed.smoketest.NegativeTest"></class>
+        </classes>
+    </test>
+    <!--    running certain test groups Below will run the same tag in different class-->
+    <test name="Regression Group 2">
+        <groups>
+            <run>
+                <!--                include: please run only @Test(groups="regression1")-->
+                <!--                exclude: run all but regression1-->
+                <include name="regression1"></include>
+            </run>
+        </groups>
+        <!--        go find test cases with regression1 tag in WebTables class-->
+        <classes>
+            <class name="com.techproed.tests.WebTables"></class>
+        </classes>
+    </test>
+</suite>

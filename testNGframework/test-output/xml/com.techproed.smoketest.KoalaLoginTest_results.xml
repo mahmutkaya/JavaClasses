@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="smoke tests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="27.923">
+    <properties></properties>
+
+
+
+            <testcase
+                name="koalaLogin"
+                time="27.923"
+                classname="com.techproed.smoketest.KoalaLoginTest">
+            </testcase>
+</testsuite>

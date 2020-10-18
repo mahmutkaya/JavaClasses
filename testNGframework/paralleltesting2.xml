@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke test automation" parallel="classes" thread-count="2" verbose="2">
+    <test name="Test 2">
+        <classes>
+            <class name="com.techproed.smoketest.NegativeTest"/>
+            <class name="com.techproed.tests.FaceLogin"/>
+            <class name="com.techproed.excelautomation.ReadExcel"/>
+        </classes>
+    </test>
+</suite>

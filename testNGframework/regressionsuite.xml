@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="koala regression suit" verbose="2">
+    <test name="koala test 1">
+        <packages>
+<!--            .* runs everything in framework-->
+            <package name=".*"></package>
+        </packages>
+    </test>
+</suite>

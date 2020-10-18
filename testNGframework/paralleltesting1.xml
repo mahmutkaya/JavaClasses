@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke test automation" parallel="classes" thread-count="5" verbose="2">
+    <test name="smoke tests">
+        <packages>
+            <package name="com.techproed.smoketest"></package>
+            <package name="com.techproed.excelautomation"></package>
+        </packages>
+    </test>
+</suite>

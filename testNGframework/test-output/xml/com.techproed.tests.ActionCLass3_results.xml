@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="koala test 1"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.812">
+    <properties></properties>
+
+
+
+            <testcase
+                name="keysUpDown1"
+                time="4.097"
+                classname="com.techproed.tests.ActionCLass3">
+            </testcase>
+            <testcase
+                name="keysUpDown"
+                time="3.715"
+                classname="com.techproed.tests.ActionCLass3">
+            </testcase>
+</testsuite>

@@ -120,7 +120,7 @@ public class WebTables extends TestBase {
         WebElement data=driver.findElement(By.xpath(xPath));
         System.out.println(data.getText());
     }
-    @Test
+    @Test(groups ="regression1")
     public void printDataTest(){
         login();
         printData(2,3);

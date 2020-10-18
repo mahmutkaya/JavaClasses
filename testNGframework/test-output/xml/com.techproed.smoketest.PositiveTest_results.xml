@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="smoke tests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="20.833">
+    <properties></properties>
+
+
+
+            <testcase
+                name="positiveLoginTest"
+                time="20.833"
+                classname="com.techproed.smoketest.PositiveTest">
+            </testcase>
+</testsuite>

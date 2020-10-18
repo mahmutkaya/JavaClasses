@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Test"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="2.483">
+    <properties></properties>
+
+            <testcase
+                name="logInTest"
+                time="2.483"
+                classname="com.techproed.tests.FaceLogin">
+
+            <failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; data-testid=&quot;royal_login_button&quot; type=&quot;submit&quot; id=&quot;u_0_b&quot;&gt;...&lt;/button&gt; is not clickable at point (1120, 300). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=86.0.4240.80)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;mahmuts-MBP&apos;, ip: &apos;fd1c:1386:d350:4e00:798f:cce9:5656:d10f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_252&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.80, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/9x/fw61rr0x4q5...}, goog:chromeOptions: {debuggerAddress: localhost:64007}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4c0b7446d10ccbdb064956ab4d5b1f50">
+                <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_b">...</button> is not clickable at point (1120, 300). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=86.0.4240.80)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'mahmuts-MBP', ip: 'fd1c:1386:d350:4e00:798f:cce9:5656:d10f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.80, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/9x/fw61rr0x4q5...}, goog:chromeOptions: {debuggerAddress: localhost:64007}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4c0b7446d10ccbdb064956ab4d5b1f50
+                sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.lang.reflect.Constructor.newInstance(Constructor.java:423)org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.lang.reflect.Method.invoke(Method.java:498)org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)com.sun.proxy.$Proxy8.click(Unknown Source)com.techproed.tests.FaceLogin.logInTest(FaceLogin.java:17)sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.lang.reflect.Method.invoke(Method.java:498)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)java.util.ArrayList.forEach(ArrayList.java:1257)org.testng.TestRunner.privateRun(TestRunner.java:766)org.testng.TestRunner.run(TestRunner.java:587)org.testng.SuiteRunner.runTest(SuiteRunner.java:384)org.testng.SuiteRunner.access$000(SuiteRunner.java:28)org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)java.util.concurrent.FutureTask.run(FutureTask.java:266)java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)java.lang.Thread.run(Thread.java:748)
+]]>
+            </failure>
+    </testcase>
+
+
+</testsuite>

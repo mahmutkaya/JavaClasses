@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="koala test 1"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="24.392">
+    <properties></properties>
+
+
+
+            <testcase
+                name="dismissAlert"
+                time="9.126"
+                classname="com.techproed.tests.AlertTest">
+            </testcase>
+            <testcase
+                name="acceptAlert"
+                time="6.117"
+                classname="com.techproed.tests.AlertTest">
+            </testcase>
+            <testcase
+                name="sendKeysAlert"
+                time="9.149"
+                classname="com.techproed.tests.AlertTest">
+            </testcase>
+</testsuite>

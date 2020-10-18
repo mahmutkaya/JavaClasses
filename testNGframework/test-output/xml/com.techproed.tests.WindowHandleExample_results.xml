@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="koala test 1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.241">
+    <properties></properties>
+
+
+
+            <testcase
+                name="newWindowTest"
+                time="2.241"
+                classname="com.techproed.tests.WindowHandleExample">
+            </testcase>
+</testsuite>
