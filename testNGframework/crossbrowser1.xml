@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke test automation" verbose="2">
+    <test name="smoke tests">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.techproed.crossbrowsertests"></package>
+        </packages>
+    </test>
+</suite>

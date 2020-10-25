@@ -12,11 +12,11 @@
             <testcase
                 name="keysUpDown1"
                 time="4.097"
-                classname="com.techproed.tests.ActionCLass3">
+                classname="com.techproed.tests.ActionsCLass3">
             </testcase>
             <testcase
                 name="keysUpDown"
                 time="3.715"
-                classname="com.techproed.tests.ActionCLass3">
+                classname="com.techproed.tests.ActionsCLass3">
             </testcase>
 </testsuite>

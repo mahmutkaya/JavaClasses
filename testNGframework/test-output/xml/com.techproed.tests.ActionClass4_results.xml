@@ -12,6 +12,6 @@
             <testcase
                 name="scrollUpDown"
                 time="41.778"
-                classname="com.techproed.tests.ActionClass4">
+                classname="com.techproed.tests.ActionsClass4">
             </testcase>
 </testsuite>

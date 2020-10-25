@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class ActionCLass3 extends TestBase {
+public class ActionsCLass3 extends TestBase {
     //    Go to google
 //    Send iPhone X prices => convert small letter capital vice versa.
 //    Highlight the search box by double clicking

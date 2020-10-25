@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="koala" verbose="2">
+    <test name="Testing with chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.techproed.crossbrowsertests"></package>
+        </packages>
+    </test>
+    <test name="Testing with firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.techproed.crossbrowsertests"></package>
+        </packages>
+    </test>
+</suite>

@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class ActionClass4 extends TestBase {
+public class ActionsClass4 extends TestBase {
     /**
      * Create a class: ActionClass4
      * Create test method : scrollUpDown()
