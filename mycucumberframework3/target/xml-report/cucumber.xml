@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.923">
+<testcase classname="Create Data" name="Creating new hotel" time="2.816">
+<system-out><![CDATA[Given user connects to the application database.............................passed
+And create a new hotel with the new data....................................passed
+Then verify if the hotel is created.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

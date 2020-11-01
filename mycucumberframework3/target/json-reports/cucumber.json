@@ -1,0 +1,83 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "connecting to the database",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1166000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user connects to the application database",
+            "match": {
+              "location": "database_stepdefinition.DBUpdate_stepDefinitions.user_connects_to_the_application_database()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-01T21:19:20.250Z",
+        "line": 6,
+        "name": "Creating new hotel",
+        "description": "",
+        "id": "create-data;creating-new-hotel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 167000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "create a new hotel with the new data",
+            "match": {
+              "location": "database_stepdefinition.DBCreate_stepDefinitions.create_a_new_hotel_with_the_new_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1428000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify if the hotel is created",
+            "match": {
+              "location": "database_stepdefinition.DBCreate_stepDefinitions.verify_if_the_hotel_is_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DBCreate"
+          }
+        ]
+      }
+    ],
+    "name": "Create Data",
+    "description": "",
+    "id": "create-data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/jdbc_create.feature",
+    "tags": [
+      {
+        "name": "@DBCreate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features ="src/test/resources/features",
 //        Path of the step definitions folder
         glue = "stepdefinitions",
-        tags = "@wip",
+        tags = "@dbtest",
 //        tags ="@test1 and not @test2",
         dryRun = false,
 //        plugin = "html:target/default-cucumber-reports"
